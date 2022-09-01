@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>秘密地址加载中...</title>
+  <meta name="keywords" content="秘密指南,秘密入口,秘密入口地址,专属于宅男的秘密,秘密入口最新,秘密入口官网">
+  <meta name="description" content="秘密指南（秘密入口）是你の秘密导航姬！及時收錄宅男网站、萌妹网站、技术网站等內容。讓您獲得更加簡單快捷の秘密导航體驗！">
+</head>
+<body>
+<div id="dvContent" style="display:none">
+<span id="spTime">2</span>
+</div>
+<script type="text/javascript">   
+	LoadURL();        
+	function LoadURL() {    
+		var urlList=["https://mimi1.cc","https://mimi2.cc","https://mimi3.cc"];
+		var time = document.getElementById("spTime").innerHTML; 
+		var t = setTimeout("LoadURL()", 1000);        
+		if (time > 0) {            
+			time--;            
+			document.getElementById("spTime").innerHTML = time;        
+			} else {     
+				clearTimeout(t);    
+				document.getElementById("dvContent").innerHTML=""; 
+				window.location.href=urlList[Math.floor(Math.random()*urlList.length)];
+			}            
+	} 
+</script>
+<p style="text-align:center;"><img src="/img/loading.gif" alt="地址加载" /><br />正在打開&nbsp;<span style="background-color:#E53333;color:#FFFFFF;">&nbsp;秘密指南&nbsp;</span>&nbsp;，請等待3秒鐘...</p>
+</body>
+</html>
